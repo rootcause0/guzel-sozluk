@@ -5,8 +5,8 @@ import { EntryType } from '../types/EntryType';
 const Entry = ({ title, content, author }: EntryType): JSX.Element => {
     return (
         <>
-            <div className="mb-20 mt-20" style={{ width: '800px' }}>
-                <div className="flex flex-col gap-2 text-start">
+            <div className="flex mb-20 mt-20 w-full">
+                <div className="flex flex-col gap-2 text-start w-full px-3">
                     <h1 className="text-xl font-bold text-wrap">{title}</h1>
                     <p>{content}</p>
                     <div className="author-container flex flex-row justify-between">
@@ -20,7 +20,7 @@ const Entry = ({ title, content, author }: EntryType): JSX.Element => {
                         </div>
                         <div className="flex items-center">
                             <div className="ml-4">
-                                <div className="text-green-500 font-bold">{author}</div>
+                                <div className="text-green-500 font-bold hover:cursor-pointer">{author}</div>
                                 <div className="text-gray-500 text-sm">00.00.0000 00:00</div>
                             </div>
                             <div className="w-10 h-28 rounded-full flex items-center justify-center">
