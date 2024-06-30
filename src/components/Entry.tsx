@@ -5,7 +5,7 @@ import { EntryType } from '../types/EntryType';
 const Entry = ({ title, content, author }: EntryType): JSX.Element => {
     return (
         <>
-            <div className="flex mb-20 mt-20 w-full">
+            <div className="flex mb-5 mt-5 w-full">
                 <div className="flex flex-col gap-2 text-start w-full px-3">
                     <h1 className="text-xl font-bold text-wrap">{title}</h1>
                     <p>{content}</p>
