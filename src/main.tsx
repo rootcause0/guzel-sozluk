@@ -4,8 +4,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+
 import Home from './Home.tsx'
+import Topic from './pages/Topic.tsx'
 import Root from './routes/root.tsx';
+
 import "@fontsource/source-sans-pro";
 import './index.css'
 
@@ -17,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: 'topic/:id',
+        element: <Topic />
       }
     ]
   },

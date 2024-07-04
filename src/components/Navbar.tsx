@@ -1,4 +1,5 @@
 import { IconSearch } from '@tabler/icons-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = (): JSX.Element => {
     return (
@@ -6,7 +7,9 @@ const Navbar = (): JSX.Element => {
             <div className="wrapper border-t-4 border-green-500 border-b-2 border-b-gray-200">
                 <div className="flex justify-evenly">
                     <div className="flex justify-center items-center left-upper gap-20 p-3">
+                        <Link to="/">
                         <img className="w-60 h-8" alt="logo" src='https://ekstat.com/img/new-design/eksisozluk_logo.svg'></img>
+                        </Link>
                         <div className="hidden md:flex items-center w-full">
                             <input className="border border-green-500 p-1 text-gray-500 dark:text-slate-200 text-md h-2/3 w-72 focus:outline-none" placeholder="başlık, #entry, @yazar"></input>
                             <button className="flex justify-center items-center bg-green-500 text-white" style={{ height: '30px' }}>
