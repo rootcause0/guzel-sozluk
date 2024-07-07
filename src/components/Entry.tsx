@@ -13,7 +13,7 @@ const Entry = ({ entry }: EntryProps): JSX.Element => {
             <div className="flex mb-5 mt-5 w-full">
                 <div className="flex flex-col gap-2 text-start w-full px-3">
                     <h1 className="text-xl font-bold text-wrap">{entry.title.toLocaleLowerCase()}</h1>
-                    <p>{entry.content}</p>
+                    <p>{entry.content.toLowerCase()}</p>
                     <div className="author-container flex flex-row justify-between">
                         <div className="flex flex-row gap-2">
                             <span className="border-gray-200">

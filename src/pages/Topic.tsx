@@ -2,6 +2,7 @@ import { IconArrowUp } from '@tabler/icons-react';
 import { IconArrowDown } from '@tabler/icons-react';
 import { TopicEntryType } from '../types/TopicEntryType';
 
+import { useParams } from 'react-router-dom';
 
 
 const entries: Array<TopicEntryType> = [
@@ -23,6 +24,9 @@ const entries: Array<TopicEntryType> = [
 ];
 
 const Topic = (): JSX.Element => {
+    const { topicId } = useParams()
+    console.log(topicId)
+
     return (
         <>
             <div className="flex flex-col gap-2 m-2.5">
