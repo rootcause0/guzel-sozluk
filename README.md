@@ -21,4 +21,3 @@ There you go, enjoy!
 ## Usage
 
 The project itself is pretty straightforward. To be honest, it didn’t quite turn out as I originally envisioned, So, for now, I've focused on getting the essentials up and running: the main page, entry detail page, and login page.
-```
