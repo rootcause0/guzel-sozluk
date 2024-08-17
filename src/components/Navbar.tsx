@@ -24,7 +24,7 @@ const Navbar = (): JSX.Element => {
                         <span>kayıt ol</span>
                     </div>
                 </div>
-                <div className="flex bottom-nav justify-center items-center gap-20 font-extrabold pb-5">
+                <div className="hidden md:flex bottom-nav justify-center items-center gap-20 font-extrabold pb-5">
                     <span className="text-sm text-gray-700 hover:cursor-pointer dark:text-slate-400">
                         gündem
                     </span>
