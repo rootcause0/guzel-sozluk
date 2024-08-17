@@ -12,6 +12,7 @@ import Root from './routes/root.tsx';
 
 import "@fontsource/source-sans-pro";
 import './index.css'
+import Login from './pages/Login.tsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'topic/:topicId',
         element: <Topic />
+      },
+      {
+        path: 'login',
+        element: <Login />
       }
     ]
   },

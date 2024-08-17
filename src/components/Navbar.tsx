@@ -8,7 +8,7 @@ const Navbar = (): JSX.Element => {
                 <div className="flex justify-evenly">
                     <div className="flex justify-center items-center left-upper gap-20 p-3">
                         <Link to="/">
-                        <img className="w-60 h-8" alt="logo" src='https://ekstat.com/img/new-design/eksisozluk_logo.svg'></img>
+                            <img className="w-60 h-8" alt="logo" src='https://ekstat.com/img/new-design/eksisozluk_logo.svg'></img>
                         </Link>
                         <div className="hidden md:flex items-center w-full">
                             <input className="border border-green-500 p-1 text-gray-500 dark:text-slate-200 text-md h-2/3 w-72 focus:outline-none" placeholder="başlık, #entry, @yazar"></input>
@@ -18,7 +18,9 @@ const Navbar = (): JSX.Element => {
                         </div>
                     </div>
                     <div className="hidden md:flex justify-end gap-5 items-center hover:cursor-pointer">
-                        <span className="mr-3">giriş</span>
+                        <Link className="dark:hover:text-gray-200" to={'login'} style={{ color: 'inherit', textDecoration: 'none' }}>
+                            <span className="text-black-200 mr-3">giriş</span>
+                        </Link>
                         <span>kayıt ol</span>
                     </div>
                 </div>
